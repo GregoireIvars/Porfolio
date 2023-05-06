@@ -1,34 +1,46 @@
-.navBody {
+/* Header */
+.appBar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+    background-color: #413620;
+    box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  
+  .Composant {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+  
+  .logo {
+    height: 100px;
+    width: 100px;
+    margin-right: 20px;
+  }
+  
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: black;
-    position: sticky;
-    top: 0;
-}
-
-.navBody a {
-    color: white;
-}
-
-li {
-    text-align: center;
-    display: inline-block;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: Red;
-}
-
-.profil {
-    background-color: #04AA6D;
-}
+  }
+  
+  .Btn {
+    font-weight: bold;
+    color: #ffffff;
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+    margin-right: 5px;
+    height: auto;
+  }
+  
+  

@@ -1,23 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
+
 import './css/App.css';
-import Header from "./component/header"
 import Footer from "./component/footer"
+import ErrorPage from "./error";
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Home from './view/home';
+
+
+
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Header />,
+    element: <Home />,
+    errorElement: <ErrorPage />,
   },
 ]);
+
 function App() {
   return (
     <>
     <div className="App">
-          <RouterProvider router={router} />
+    <RouterProvider router={router} />
     </div>
     <Footer/>
     </>

@@ -1,29 +1,56 @@
-import '../css/header.css';
-import { TEXT_HEADER_P1, TEXT_HEADER_P2, TEXT_HEADER_P3, TEXT_HEADER_P4, TEXT_HEADER_TITLE } from "../constante/constantes";
-export default function Header() {
+import React from "react";
+import { Link } from "react-router-dom";
+import "../css/header.css";
+import { NavRoute } from "../routes/navRoute";
+import {TEXT_HEADER_TITLE} from "../constante/constantes"
+const Header = () => {
+ 
+  
+  const navItems: NavRoute[] = [
+    {
+      route: '/',
+      label: 'Accueil',
+    },
+    {
+      route: '/createQrcode',
+      label: 'Créer un QRCode',
+    },
+    {
+      route: '/monCompte',
+      label: 'Mon compte',
+    },
+  ]
 
-    return (
-        <>
-            <div id="sidebar">
-                <nav>
-                    <ul className='navBody'>
-                        <a href={""}><h1>{TEXT_HEADER_TITLE}</h1></a>
-                        <li>
-                            <a href={"/home/1"}>{TEXT_HEADER_P1}</a>
-                        </li>
-                        <li>
-                            <a href={"/home/1"}>{TEXT_HEADER_P2}</a>
-                        </li>
-                        <li>
-                            <a href={"/home/1"}>{TEXT_HEADER_P3}</a>
-                        </li>
-                        <li>
-                            <a href={"/home/1"}>{TEXT_HEADER_P4}</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="detail"></div>
-        </>
-    );
-}
+  const NavList = () => (
+    <ul className="list">
+      {navItems.map(
+        (item) =>
+          (
+            <li key={item.route}>
+              <Link to={item.route} className='Btn'>
+                {item.label}
+              </Link>
+            </li>
+          )
+      )}
+
+    </ul>
+  );
+ 
+  return (
+    <header className="appBar">
+      <div className="Composant">
+        <div>
+          <Link to="/">
+            {TEXT_HEADER_TITLE}
+          </Link>
+        </div>
+        <nav>
+          <NavList />
+        </nav>
+      </div>
+    </header>
+  );
+};
+
+export default Header;
