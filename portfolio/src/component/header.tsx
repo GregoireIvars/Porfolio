@@ -13,11 +13,15 @@ const Header = () => {
     },
     {
       route: '/createQrcode',
-      label: 'Créer un QRCode',
+      label: 'Compétence',
     },
     {
       route: '/monCompte',
-      label: 'Mon compte',
+      label: 'Projet',
+    },
+    {
+      route: '/monCompte',
+      label: 'Parcours',
     },
   ]
 
@@ -40,9 +44,9 @@ const Header = () => {
   return (
     <header className="appBar">
       <div className="Composant">
-        <div>
+        <div className="headerTitle">
           <Link to="/">
-            {TEXT_HEADER_TITLE}
+            <h1>{TEXT_HEADER_TITLE}</h1>
           </Link>
         </div>
         <nav>
