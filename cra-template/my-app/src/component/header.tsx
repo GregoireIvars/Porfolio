@@ -12,7 +12,7 @@ const Header = () => {
       label: 'Accueil',
     },
     {
-      route: '/competence',
+      route: '/compétence',
       label: 'Compétence',
     },
     {

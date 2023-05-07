@@ -1,7 +1,7 @@
 
 
 //Header
-export const TEXT_HEADER_TITLE = "Myriam Blanchet"
+export const TEXT_HEADER_TITLE = "Portfolio"
 
 
 //Footer
