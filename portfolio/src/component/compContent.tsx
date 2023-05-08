@@ -72,7 +72,7 @@ const OnLoad = () => {
 }
 
 
-function CompAnimation() {
+function CompContent() {
     useEffect(() => {
         OnLoad();
         slideInTop("#box1", 0.4, 0.6);
@@ -98,4 +98,4 @@ function CompAnimation() {
         </>
     );
 };
-export default CompAnimation;
+export default CompContent;

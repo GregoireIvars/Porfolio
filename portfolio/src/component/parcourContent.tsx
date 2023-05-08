@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/all';
 import { ScrollToPlugin } from 'gsap/all';
-import "../css/projet.css";
+import "../css/parcour.css";
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 //Animation d'une section apparant par la gauche 
@@ -72,7 +72,7 @@ const OnLoad = () => {
 }
 
 
-function ProjetAnimation() {
+function ParcContent() {
     useEffect(() => {
         OnLoad();
         slideInTop("#box1", 0.4, 0.6);
@@ -98,4 +98,4 @@ function ProjetAnimation() {
         </>
     );
 };
-export default ProjetAnimation;
+export default ParcContent;

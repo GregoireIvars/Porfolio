@@ -72,7 +72,7 @@ const OnLoad = () => {
 }
 
 
-function HomeAnimation() {
+function HomeContent() {
     useEffect(() => {
         OnLoad();
         slideInTop("#box1", 0.4, 0.6);
@@ -98,4 +98,4 @@ function HomeAnimation() {
         </>
     );
 };
-export default HomeAnimation;
+export default HomeContent;

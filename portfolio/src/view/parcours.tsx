@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from "../component/header"
-import ParcAnimation from '../animation/parcourAnimation';
+import ParcContent from '../component/parcourContent';
 function Parcours() {
   return (
     <>
     <Header/>
     <div className="App">
-      <ParcAnimation/>
+      <ParcContent/>
     </div>
     </>
   );

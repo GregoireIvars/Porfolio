@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from "../component/header"
-import ProjetAnimation from '../animation/projetAnimation';
+import ProjetContent from '../component/projetContent';
 function Projet() {
   return (
     <>
     <Header/>
     <div className="App">
-      <ProjetAnimation/>
+      <ProjetContent/>
     </div>
     </>
   );

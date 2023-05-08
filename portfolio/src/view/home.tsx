@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "../component/header";
 import "../css/home.css";
-import HomeAnimation from "../animation/homeAnimation";
+import HomeContent from "../component/homeContent";
 function Home() {
 
   return (
     <>
       <Header />
       <div className="App">
-        <HomeAnimation/>
+        <HomeContent/>
       </div>
     </>
   );
