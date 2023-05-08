@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react';
+import { useEffect} from 'react';
 import { gsap } from "gsap";
 import { ScrollTrigger } from 'gsap/all';
 import { ScrollToPlugin } from 'gsap/all';
@@ -51,7 +51,7 @@ const slideInTop = (elem: any, delay: any, duration: any) => {
 
 //Animation touchant le texte (peut manipuler également le css dynamiquement)
 const OnLoad = () => {
-    gsap.timeline().fromTo(".letter", {
+    gsap.timeline().fromTo(".text", {
         x: -100,
         opacity: 0,
     },
@@ -61,14 +61,16 @@ const OnLoad = () => {
             stagger: 0.33,
             delay: 0.7,
         }
-    ).to(".title", {
-        y: 45,
+    ).to(".text", {
+        y: -20,
         delay: 0.7,
+        x: -75,
+        fontSize: 25,
     })
-    .to(window, {
-        duration: 2,
-        scrollTo: "#nextSection"
-    })
+        // .to(window, {
+        //     duration: 2,
+        //     scrollTo: "#nextSection"
+        // })
 }
 
 
@@ -80,21 +82,9 @@ function HomeContent() {
     }, [])
     return (
         <>
-                <h1 className='title' >
-                    <span className='letter'>H</span>
-                    <span className='letter'>E</span>
-                    <span className='letter'>L</span>
-                    <span className='letter'>L</span>
-                    <span className='letter'>O</span>
-                </h1>
-            <section id='nextSection'>
-                <div id='box1' className='box'>
-                    <p>Block Top</p>
-                </div>
-                <div id='box2' className='box'>
-                <p>Block Left</p>
-                </div>
-            </section>
+            <p className='text' >
+              bienvenu sur mon portfolio !
+            </p>
         </>
     );
 };
