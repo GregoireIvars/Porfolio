@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from "../component/header"
+import ProjetAnimation from '../animation/projetAnimation';
 function Projet() {
   return (
     <>
     <Header/>
     <div className="App">
-      Welcome to projet there nothing but a projet page
+      <ProjetAnimation/>
     </div>
     </>
   );

@@ -1,34 +1,17 @@
-import React from 'react';
-import Header from "../component/header"
-import "../css/home.css"
-function home() {
+import React from "react";
+import Header from "../component/header";
+import "../css/home.css";
+import HomeAnimation from "../animation/homeAnimation";
+function Home() {
+
   return (
     <>
       <Header />
       <div className="App">
-        <section className='infoUser' >
-          <div>
-              <p>Block 1 </p>
-          </div>
-          <div>
-            <p>Block 2 </p>
-          </div>
-              </section>
-              <section className='other data'>
-          <div>
-            <p>Block 3 </p>
-          </div>
-          <div>
-            <p>Block 4 </p>
-          </div>
-          </section>
-
-    
-
-
+        <HomeAnimation/>
       </div>
     </>
   );
 }
 
-export default home;
+export default Home;

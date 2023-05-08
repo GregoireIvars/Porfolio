@@ -1,11 +1,12 @@
 import React from 'react';
 import Header from "../component/header"
+import CompAnimation from '../animation/competenceAnimation';
 function Competence() {
   return (
     <>
     <Header/>
     <div className="App">
-      Welcome to competence there nothing but a competence page
+      <CompAnimation/>
     </div>
     </>
   );

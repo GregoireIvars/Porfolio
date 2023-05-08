@@ -44,9 +44,9 @@ const Header = () => {
   return (
     <header className="appBar">
       <div className="Composant">
-        <div className="headerTitle">
+        <div >
           <Link to="/">
-            <h1>{TEXT_HEADER_TITLE}</h1>
+            <h1 className="headerTitle">{TEXT_HEADER_TITLE}</h1>
           </Link>
         </div>
         <nav>
