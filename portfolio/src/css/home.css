@@ -1,29 +1,29 @@
 
-section {
-    display: flex;
-    width: 100%;
-    background: #EEE;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
+body { 
+   background-color: #B0B0B0;
 }
-.text { 
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Deux colonnes égales */
+    grid-gap: 10px; /* Espacement entre les colonnes */
+  }
+  
+  .content-text {
+    background-color: #f2f2f2;
+    padding: 4vh;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  
+  .content-image {
+    background-image: url(../images/namour.png);
+    background-size: 280px 250px; /* Ajuste la taille de l'image en fonction de la largeur */
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 300px;
     display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-weight: normal;
-    margin: 0;
-    font-size: 3em;
-
-}
-
-.box{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 3em;
-    font-size: 3em;
-    border-bottom: 1px solid #666;
-    border-top: 1px solid #666;
-}
+    border: 5px solid #ccc; /* Réduit la taille de la bordure */
+  }

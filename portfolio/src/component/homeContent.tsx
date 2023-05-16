@@ -1,9 +1,5 @@
-import { useEffect} from 'react';
-import { gsap } from "gsap";
-import { ScrollTrigger } from 'gsap/all';
-import { ScrollToPlugin } from 'gsap/all';
+
 import "../css/home.css";
-gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 //Animation d'une section apparant par la gauche 
 // const slideInLeft = (elem: any, delay: any, duration: any) => {
@@ -81,40 +77,55 @@ function HomeContent() {
     //     slideInLeft("#box2", 0.8, 1);
     // }, [])
     return (
-        <>
-            <h1 className='' >
-              Bienvenu sur mon portfolio !
-            </h1>
-            <h3>
-            Qui suis je ? 
-            </h3>
-            <p>
-                Text présentant la personne (ajouter une petite animation sur ce texte )
-            </p>
+        <div>
+            <div className="title">
+                <h1>
+                    Bienvenu sur mon portfolio !
+                </h1>
+            </div>
+            <div className="content">
+                <div className="content-text">
+                    <h3>
+                        Qui suis-je ?
+                    </h3>
+                    <p>
+                        Texte présentant la personne (ajouter une petite animation sur ce texte)
+                    </p>
+                </div>
+               <div className="content-image"></div>
+            </div>
+            <div className="">
+                <h3>Mes compétences</h3>
+                <p>
+                    Text présentant la personne (ajouter une petite animation sur ce texte )
+                </p>
+                <button>there is a button</button>
+            </div>
+            <div className="">
+                <h3>Mes Projet</h3>
+                <p>
+                    Text présentant la personne (ajouter une petite animation sur ce texte )
+                </p>
 
-            <h3>Mes compétences</h3>
-            <p>
-                Text présentant la personne (ajouter une petite animation sur ce texte )
-            </p>
-            <button>there is a button</button>
-            <h3>Mes Projet</h3>
-            <p>
-                Text présentant la personne (ajouter une petite animation sur ce texte )
-            </p>
-            <button>there is a button</button>
-            <h3>Mon Parcours</h3>
-            <p>
-                Text présentant la personne (ajouter une petite animation sur ce texte )
-            </p>
-            <button>there is a button</button>
+                <button>there is a button</button>
+            </div>
 
-            <h2>Mon CV</h2>
-            <p>mettre le cv soit à dl soit afficher directement</p>
+            <div className="">
+                <h3>Mon Parcours</h3>
+                <p>
+                    Text présentant la personne (ajouter une petite animation sur ce texte )
+                </p>
+                <button>there is a button</button>
+            </div>
+            <div className="">
+                <h2>Mon CV</h2>
+                <p>mettre le cv soit à dl soit afficher directement</p>
 
-            <p>footer</p>
+                <p></p>
+            </div>
 
-            
-        </>
+        </div>
+
     );
 };
 export default HomeContent;
